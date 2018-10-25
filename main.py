@@ -1,5 +1,6 @@
 from flask import Flask
 import sklearn
+import numpy
 app = Flask(__name__)
 
 @app.route('/')
