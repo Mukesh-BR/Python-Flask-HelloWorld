@@ -7,6 +7,7 @@ app=Flask(__name__)
 @app.route('/')
 
 def main():
+	return "Hello World!!Please Work"
 	a = int(request.headers.get('A'))
 	b = int(request.headers.get('B'))
 	c = int(request.headers.get('C'))
@@ -25,10 +26,10 @@ def main():
 	ypred_nw=str(abs(clf_nw.predict(x_test)[0]))
 	
 	
-	return str(ypred_ne) + " " + str(ypred_se) + " " + str(ypred_sw) + " " + str(ypred_nw) 
+	#return str(ypred_ne) + " " + str(ypred_se) + " " + str(ypred_sw) + " " + str(ypred_nw) 
 
 if __name__=='__main__':
-	app.run(host='192.168.43.48',port=8000)
+	app.run()
 
 
 
