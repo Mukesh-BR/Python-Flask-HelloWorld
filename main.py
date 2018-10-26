@@ -1,5 +1,6 @@
 from flask import Flask
 import numpy as np
+import pickle
 app = Flask(__name__)
 
 @app.route('/')
