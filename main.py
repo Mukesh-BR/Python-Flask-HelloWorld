@@ -1,7 +1,5 @@
 from flask import Flask
 import numpy as np
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.externals import joblib
 app = Flask(__name__)
 
 @app.route('/')
