@@ -35,7 +35,7 @@ def main():
 	return ypred_ne+" "+ypred_se+" "+ypred_sw+" "+ypred_nw 
 
 if __name__=='__main__':
-	app.run(host='192.168.43.48',port=8000)
+	app.run()
 
 
 
